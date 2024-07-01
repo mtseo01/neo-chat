@@ -25,7 +25,10 @@ export default function RootLayout({
     <html lang="ko">
       <link rel="shortcut icon" href="/assets/favicon.ico" />
       <UserContextProvider>
-        <body className={spaceGrotesk.className}>{children}</body>
+        <body className={spaceGrotesk.className}>
+          <div>{children}</div>
+          <div id="_portal"></div>
+        </body>
       </UserContextProvider>
     </html>
   );
